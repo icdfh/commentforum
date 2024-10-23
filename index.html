@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум с комментариями</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Комментарии</h1>
+
+        <!-- Форма для добавления комментария -->
+        <form id="comment-form">
+            <input type="text" id="username" placeholder="Ваше имя" required>
+            <textarea id="comment" placeholder="Ваш комментарий" required></textarea>
+            <button type="submit">Отправить комментарий</button>
+        </form>
+
+        <!-- Сортировка комментариев -->
+        <div id="sort-options">
+            <label for="sort">Сортировать по:</label>
+            <select id="sort">
+                <option value="newest">Новые</option>
+                <option value="oldest">Старые</option>
+            </select>
+        </div>
+
+        <!-- Список комментариев -->
+        <ul id="comment-list"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
